@@ -14,7 +14,7 @@ pnix(
     desc: "Show All commands",
   },
   async (message, match, m) => {
-  message.client.sendMessage(message.jid, { react: { text: "📃", key: m.key } });
+  message.client.sendMessage(message.jid, { react: { text: "🌚", key: m.key } });
     if (match) {
       for (let i of events.commands) {
         if (i.pattern.test(message.prefix + match))
@@ -73,10 +73,10 @@ Description : ${i.desc}\`\`\``
 
       menu += ``;
       return await message.client.sendMessage(message.jid, {
-        image: { url: `https://i.ibb.co/tHWJrz3/IMG-20231128-WA0005.jpg` },
+        image: { url: `https://i.imgur.com/o3AEXEj.jpeg` },
         caption: tiny(menu),
         footer: tiny(
-          `Phoenix-MD\nVersion : ${require("../package.json").version}`
+          `Queen-Nezuko\nVersion : ${require("../package.json").version}`
         ),
       });
     }
